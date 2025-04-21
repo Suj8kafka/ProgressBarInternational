@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inter&family=Poppins:wght@300&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inter&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inter&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Ubuntu&family=Varela+Round&display=swap');
+
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+#Logo1{ 
+  width: 100px;
+  cursor: pointer;
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  transition: .5s ease;
+
+}
+
+
+/* Nav bar Customization  */
+#particles-js{ 
+  position: relative;
+  height: 15vh;
+  background-color: var(--nav1);
+  border-radius: 0 0 30px 30px;
+  transition: .5s ease;
+}
+
+header{ 
+    position: fixed;
+    top: 0;
+    left: -5%;
+    width: 115%;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s ease;
+    padding: 40px 100px;
+    z-index: 100000;
+    /* background-color: #151515; */
+    
+}
+header .logo{ 
+    position: relative;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
+    left: 7%;
+    
+}
+header.sticky { 
+    padding: 25px 100px;
+    background: black;
+    transition: .5s ease;
+    left: -2%;
+
+}
+header.sticky .logo { 
+    color: wheat;
+    /* transition: .5s ease; */
+    left: 3%;
+}
+header.sticky #Logo1{ 
+  width: 95px;
+  left: 1%;
+  top: 0%;
+  /* transition: .5s ease; */
+}
+header.sticky .links{ 
+  color: wheat;
+  left: 79%;
+  /* transition: .5s ease ; */
+}
+
+/* Current Day */
+header .links{ 
+  position: absolute;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  left: 80%;
+  transition: .5s ease;
+}
+
+
+.alert{
+  text-align: center;
+  padding:5px;
+  background:#c2ffd4;
+  font-family: 'Poppins', sans-serif;
+  color:rgb(0, 0, 0);
+  font-weight: 700;
+  margin-bottom:10px;
+  display:none;
+  border-radius: 20px;
+  transition: .3s ease;
+}
+
+:root{ 
+    --primary-color: #ffffff;
+    --secondary-color :#373737;
+    --tertiary-color:#373737;  
+    --nav1:rgb(216, 137, 0); 
+
+} 
+#visitors{ 
+    color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    left: 0%;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+/* Dark mode - Keep the same color on hover */
+.dark-theme .SmallContainer:hover, 
+.dark-theme .container:hover {
+  background-color: var(--primary-color) !important; /* Keep the dark theme color */
+  pointer-events: none;
+}
+
+
+.dark-theme{ 
+    --primary-color:#373737; 
+    --secondary-color:rgb(255, 255, 255); 
+    --tertiary-color:black; 
+    --nav1:#373737; 
+    
+}
+
+#icons{ 
+  
+    width: 30px;
+    cursor: pointer;
+    position: fixed;
+    left: 93%;
+    top: 1%;
+    color: red;
+}
+ #icons:hover{ 
+background-color: rgb(255, 204, 109);
+border-radius: 20px;
+transition: .8s;
+}
+.container{ 
+  position: relative;
+    width: 100%;
+    background:var(--primary-color);   
+    height: 75vh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease;
+}
+h1{ 
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 120px; 
+    color:var(--secondary-color);
+    font-weight: lighter;
+}
+.large{ 
+    color: var(--secondary-color);
+    font-size: bold;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.progress{ 
+    width: 600px;
+    height: 100px;
+    background-color: var(--tertiary-color);
+    position: relative;
+    margin-bottom: 50px;
+    transition: .5s ease;
+}
+.progress-inner{ 
+    background-color: #00f047;
+    position: absolute;
+    top: 5%;
+    width: 590px;
+    height: 90px;
+    left: 1%;
+    transition: .5s ease;
+
+}
+
+/* Mini Progressbar  */
+.SmallContainer{ 
+   position: relative;
+    width: 100%;
+    background: var(--primary-color);
+    height: 25vh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease;
+    
+    
+}
+h2{ 
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 60px;
+    font-weight: lighter;
+    color: var(--secondary-color);
+}
+.small{ 
+    color: var(--secondary-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-size: bold;
+}
+.progressLarge{ 
+    width: 300px;
+    height: 50px;
+    background-color: var(--tertiary-color);
+    position: relative;
+    margin-bottom:1px ;
+    transition: .5s ease;
+}
+.progressInn{ 
+    background-color: #00f047;
+    position:absolute; 
+    width: 294px;
+    height: 45px;
+    top: 4%;
+    left: 1%;
+    transition: .5s ease;
+}
+
+
+
+
+/* Custom Animation  for large Devices*/
+.SmallContainer:hover> h2{ 
+    color: black;
+    
+}
+.SmallContainer:hover>  p{ 
+    color: black;
+    transition: .5s;
+}
+.SmallContainer:hover { 
+        width: 100%;
+        background: rgb(166, 234, 255);
+        height: 25vh;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 70px;
+        
+
+}
+.SmallContainer:hover> .progressLarge{ 
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    margin-bottom:1px ;
+    border-radius: 25px;
+}
+
+.SmallContainer:hover>  .progressLarge .progressInn{ 
+    background-color: #00f047;
+    position:absolute; 
+    width: 294px;
+    height: 45px;
+    top: 4%;
+    left: 1%;
+    /* top right bottom left */
+    border-radius: 20px;
+   
+} 
+.container:hover{ 
+    width: 100%;
+    background:  rgb(255, 204, 66);  
+    height: 75vh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 200px;
+   
+}
+.container:hover > .progress{ 
+    border-radius: 40px;
+    background-color: black;
+    
+
+}
+.container:hover> .progress .progress-inner{ 
+    border-radius: 35px;
+    
+}
+.container:hover> p{
+     color: black;
+     transition: .6s;
+}
+.container:hover> h1 {
+    color: black;
+    transition: .6s; 
+
+}
+
+
+
+
+
+/* footer */
+
+footer{ 
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--primary-color); 
+  font-family: 'Poppins', sans-serif;
+  border-radius: 45px ;
+  color: var(--secondary-color);
+  transition: .5s ease;
+}
+.hack{ 
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+
+}
+.main-content{ 
+  display: flex;
+  
+}
+.main-content .box{ 
+  flex-basis: 50% ;
+  padding: 10px 20px;
+}
+.box h2{ 
+  font-size: 1.125ren;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+.box .content{ 
+  margin: 20px 0 0 0 ;
+  position: relative;
+}
+.box .content:before{ 
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: var(--primary-color) ;
+}
+.box .content:after{ 
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background:#f12020 ;
+  top: -10px;
+}
+.left .content p{ 
+  text-align: justify;
+}
+.left .content .social a{ 
+ padding : 0 2px;  
+}
+.left .content .social a span{ 
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 10%;
+  background-color: #272727c7;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: .5s ease;
+  color: white;
+}
+.left .content .social a span:hover{ 
+  background-color: #00f047;
+  color: #1877F2;
+}
+.center .content .fa-solid{
+  font-size: 1.6rem;
+  background-color: rgb(33, 33, 33);
+  color: var(--primary-color);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  transition: .5s ease;
+  cursor: pointer;
+  color: white;
+}
+.center .content .fa-solid:hover{ 
+background-color: #00f047;    
+
+}
+.center .content .place .fa-map-location-dot:hover{ 
+  color: rgb(255, 80, 80);
+}
+.center .content .text{ 
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+   margin: 10px 0;
+
+}
+.center .content .fa-phone:hover{ 
+  color: rgb(0, 81, 255);
+}
+.center .content .fa-envelope:hover{ 
+  color: rgb(255, 72, 72);
+}
+.right form .msg{ 
+  margin-top: 10px;
+
+}
+.right form input, .right form textarea{ 
+  width: 100%;
+  font-size: 1.06rem;
+  background-color: #15151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus, 
+.right form textarea:focus{ 
+  outline-color:#3498db ;
+}
+.right form .text{ 
+  font-size: 1.06rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form input{ 
+  height: 35px;
+}
+.right form .btn{ 
+  margin-top: 10px;
+}
+.right form .btn button{ 
+  height: 40px;
+  width: 50%;
+  border: none;
+  outline: none;
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  font-size: 1.06rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.right form .btn button:hover{ 
+  background: #00f047;
+  border-radius: 20px;
+}
+.bottom center{ 
+  padding: 5px;
+  font: 0.9rem;
+  background-color: #151515;
+
+}
+.bottom center span{ 
+  color: #656565;
+}
+.bottom center a{ 
+  color: #00f047;
+  text-decoration: none;
+}
+.bottom center a:hover{ 
+  text-decoration: underline ;
+  
+}
+.fa-code-branch{
+  position: relative; 
+  color: wheat;
+  font-size: 18px;
+  left: 5%;
+
+  
+}
+.bottom center .ver{ 
+  position: relative;
+  color: wheat;
+  font-family: 'Roboto';
+  left: 5%;
+
+  
+}
+
+@media  screen and (max-width:900px) {
+footer{ 
+  position: relative; 
+  bottom: 0px;
+
+}
+.main-content{ 
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main-content{ 
+  margin: 5px 0;
+}
+
+}
+
+
+/* Mini Progressbar responsive */
+
+@media screen  and (max-width: 800px) {
+
+  .SmallContainer{ 
+      height: 25vh;
+          background: var(--primary-color); 
+          color: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          
+  }
+  #icons{ 
+    position: fixed;
+    
+  }
+  .SmallContainer:hover{ 
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 70px;
+      transition: .5s;
+  }
+  .SmallContainer:hover> .progressLarge{ 
+      position: relative;
+      border-radius: 20px;
+      background-color: black;
+      width: 150px;
+      Height: 40px;
+      position: relative;
+      margin-bottom: 25px;
+  }
+  .SmallContainer:hover> .progressLarge .progressInn{ 
+      border-radius: 15px;
+      color: black;
+      position: absolute;
+          width: 144px;
+          height: 35px;
+          top: 5%;
+          left: 2%;
+  }
+  
+  .container{ 
+      background: var(--primary-color);
+      color: wheat;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 70vh;
+  }
+  .container:hover{ 
+      background: rgb(255, 204, 66);
+      border-radius: 70px;
+      color: wheat;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 70vh;
+  }
+  .container:hover> .progress{
+      width: 350px;
+      height: 80px;
+      position: relative;
+      margin-bottom: 50px;
+      border-radius: 35px;
+  }
+  .container:hover> .progress .progress-inner{ 
+      position: absolute;
+      top: 5%;
+      width: 344px;
+      height: 70px;
+      left: 1%;
+      border-radius: 25px;
+     
+  }
+  
+      h2{ 
+          font-size: 10px;
+          line-height: 25px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 900;
+  
+      }
+      .small { 
+          font-size: small;
+          margin-bottom: 5px;
+          font-weight: 900;
+          font-size: 10px;
+          font-family: 'Roboto', sans-serif;
+      }
+      .progressLarge{ 
+          width: 150px;
+          height: 40px;
+          position: relative;
+          margin-bottom: 25px;
+      
+  
+      }
+      .progressInn{ 
+          position: absolute;
+          width: 144px;
+          height: 35px;
+          top: 5%;
+          left: 2%;
+          
+      }
+  
+      h1{ 
+          font-size: 20px;
+          font-weight: 900;
+          line-height: 30px;
+          font-family: 'Poppins', sans-serif;
+      }
+      .large{ 
+          
+           font-weight: 900;
+           margin-bottom: 10px;
+           font-size:17px;
+           font-family: 'Roboto', sans-serif; 
+      }
+  
+      .progress{ 
+          width: 350px;
+          height: 80px;
+          position: relative;
+          margin-bottom: 50px;
+    
+      }
+      .progress-inner{ 
+          position: absolute;
+          top: 5%;
+          width: 344px;
+          height: 70px;
+          left: 1%;
+          
+      }
+    
+   
+ /* Nav bar Customization  */
+.Top1{ 
+  position: relative;
+  height: 10vh;
+  background-color: var(--nav1);
+  border-radius: 0 0 30px 30px;
+}
+
+header{ 
+    position: fixed;
+    top: 0%;
+    left: -10%;
+    width: 115%;
+    align-items: center;
+    transition: .3s ease;
+    padding: 10px 100px;
+    
+}
+#Logo1{ 
+  width: 60px;
+}
+header .logo{
+  position: relative; 
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    left: 10%;
+    letter-spacing: 1px;
+}
+header.sticky{ 
+  left: -9%;
+
+}
+header.sticky #Logo1{ 
+  width: 50px;
+}
+header.sticky .links{ 
+  font-size: 9px;
+  left: 80%;
+  top: 45%;
+}
+header .links { 
+  position: absolute;
+  font-size: 10px;
+  right: 8%;
+  top: 50%;
+  
+}
+  
+  }
+  @media screen and (max-width: 500px){ 
+    header .logo{ 
+      font-size: 1.3rem;
+    }
+   
+  }
+
+
+
+
+  /* Notepad to store Messages in an instant  */
+  .hidden {
+    display: none;
+  }
+  
+  .Button1{ 
+    display: block;
+    margin: 20px;
+    padding: 8px 20px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    transition: .5s ease;
+  }
+  .Button1:hover{
+     background-color: wheat;
+     color: black;
+
+  }
+  
+  .message-box {
+    width: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border: none;
+    border-radius: 60px;
+    background-color: #f7f7f7;
+  }
+  
+  .message-box h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: #333;
+  }
+  
+  .message-box form {
+    margin-bottom: 10px;
+  }
+  
+  .message-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 30px;
+    resize: vertical;
+  }
+  
+  .message-box button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    /* border: none; */
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s ease;
+    border: 2px black;
+  }
+  .message-box button:hover{ 
+    outline: 5px black;
+    background-color: #f7f7f7;
+    color: black;
+  }
+  
+  .message-list-item {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .message-list-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .message-list-item .timestamp {
+    font-size: 10px;
+    color: #777;
+  }
+  
+  .message-list-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .message-list-item:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  .Messageb1{ 
+    position: relative;
+    /* background-color: var(--primary-color);  */
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    padding: 20px;
+    /* Top right bottom left */
+  }
+  .paragraph1{ 
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 30px  ;
+    height: auto;
+    transition: .5s ease;
+  }
+ 
