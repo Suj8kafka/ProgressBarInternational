@@ -1,5 +1,6 @@
 const btnStart= document.querySelector('.btn-start'); 
 const timeSpan= document.querySelector('.time'); 
+const PresentYear= document.querySelectorAll('.PresentYear')
 const progressBar= document.querySelector('.progress-inner'); 
 const DayPerentage= document.querySelector('.percentageofDay'); 
 const ProgressofDay= document.querySelector('.progressInn');
@@ -20,8 +21,19 @@ const CurrDay= document.querySelector('.day1');
                 //     progressBar.style.width="0%"; 
                 //     timeSpan.innerHTML= "Game OVer!"
                 // }
-                //   }, 1000);
+                                //   }, 1000);
+
+
+                                // Get the element with the class "Present Year"
                 
+
+                // Update the text content to the current year
+                 
+                const year = new Date().getFullYear();
+                document.querySelectorAll('.PresentYear').forEach(el => {
+                el.textContent = year;
+                });
+
                 
                 setInterval(() => {
                 const current_Date = new Date();
