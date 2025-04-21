@@ -27,7 +27,7 @@ const CurrDay= document.querySelector('.day1');
                                 // Get the element with the class "Present Year"
                 
 
-                // Update the text content to the current year
+                // Update the text content to the current International  year
                  
                 const year = new Date().getFullYear();
                 document.querySelectorAll('.PresentYear').forEach(el => {
