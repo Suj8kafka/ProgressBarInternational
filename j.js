@@ -63,6 +63,26 @@ const CurrDay= document.querySelector('.day1');
                     CheckColours(rounded_Percentage); 
                     
                     
+
+//                     // Get the current date
+// const currentDate = new Date();
+
+// // Get the first day of the current year
+// const firstDayOfYear = new Date(currentDate.getFullYear(), 0, 1);
+
+// // Calculate the total number of days that have passed this year
+// const daysPassed = Math.floor((currentDate - firstDayOfYear) / (1000 * 60 * 60 * 24));
+
+// // Calculate the total number of days in the current year
+// const isLeapYear = (currentDate.getFullYear() % 4 === 0 && (currentDate.getFullYear() % 100 !== 0 || currentDate.getFullYear() % 400 === 0));
+// const totalDaysInYear = isLeapYear ? 366 : 365;
+
+// // Calculate the percentage of the year that has passed
+// const percentageCompleted = ((daysPassed / totalDaysInYear) * 100).toFixed(2);
+
+// console.log(`Total days passed: ${daysPassed}`);
+// console.log(`Percentage of the year completed: ${percentageCompleted}%`);
+
                     
                     
                     const currentDate = new Date();
@@ -85,17 +105,17 @@ const CurrDay= document.querySelector('.day1');
                     // Calculate the percentage of the year that has passed
                     const percentage = (elapsedTime / totalTime) * 100;
                 const roundedPercentage = percentage.toFixed(8);
-                    //console.log(roundedPercentage);
-                    var DiffPercentage= 28.35559655409437; 
-                     var RealTimePercentage= roundedPercentage- DiffPercentage;
-                     RealTimePercentage= RealTimePercentage.toFixed(6) 
-                     console.log(RealTimePercentage); 
+                    // //console.log(roundedPercentage);
+                    // var DiffPercentage= 28.35559655409437; 
+                    //  var RealTimePercentage= roundedPercentage- DiffPercentage;
+                    //  RealTimePercentage= roundedPercentage.toFixed(6) 
+                    //  console.log(RealTimePercentage); 
                      
                      
                      
-                     progressBar.style.width= RealTimePercentage +"%"; 
-                     timeSpan.innerHTML= RealTimePercentage+ '%'; 
-                     checkColors(RealTimePercentage); 
+                     progressBar.style.width= roundedPercentage +"%"; 
+                     timeSpan.innerHTML= roundedPercentage+ '%'; 
+                     checkColors(roundedPercentage); 
                      
                      //let ActualProgressYears= (ruunningSecs/totalSecsYears) *1;
                      //console.log(ActualProgressYears);  
@@ -153,6 +173,7 @@ const CurrDay= document.querySelector('.day1');
                      
                      
                     }, 500);          
+
                     // Retrieve the visitor count from local storage or initialize it to 0
                     let count = localStorage.getItem('visitorCount') || 0;
 
