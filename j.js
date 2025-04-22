@@ -153,22 +153,15 @@ const CurrDay= document.querySelector('.day1');
                      //Website total Visitor Counter 
                      //Nepali Date 
                                  const days= [ 31, 30, 30, 30, 29, 29, 30, 30]; 
-                                const mos= [ 'Bhadra', 'Aswin', 'Kartik', 'Mangsir', 'Poush', 'Magh', 'Falgun', 'Chaitra']; 
+                                const mos= [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
                                 //  Synchronised day counter 
                                 var startdate= new Date ("2023-08-18"); 
                                 var currentdate= new Date(); 
-                                var timediff= Math.abs(currentdate.getTime()- startdate.getTime())
-                                var dayCount= Math.ceil(timediff/(1000*3600*24)); 
-                                // console.log(dayCount)
-                                // var dayCount = 35; 
-                                var Month=mos[0] ;  
-                                if(dayCount>31){ 
-                                    Month= mos[2]; 
-                                    dayCount-=60; 
-                                
-                                }
-                                Mosoftheyear.innerHTML= Month; 
-                                CurrDay.innerHTML= dayCount; 
+                                const currentday= currentDate.getDate(); 
+                                const currentMonth = currentDate.getMonth(); 
+                              
+                                Mosoftheyear.innerHTML= mos[currentMonth]; 
+                                CurrDay.innerHTML= currentday; 
                                 // console.log(Month, dayCount)
                      
                      
